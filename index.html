@@ -142,13 +142,42 @@
         </div>
         <div class="row justify-content-evenly">
             <div class="col-lg-3 col-sm-5 col-10">
+                <a href=" https://yashgupta7373.github.io/Countdown-Timer/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 bg-clr-2 hover-effect">
+                        <img src="img/countdown-timer.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Countdown Timer</h5>
+                            <p class="card-text font-clr">Fully Functional Countdown Timer with dynamic End Time, Background and Text Using HTML, CSS, and JavaScript.</i> </p>
+                            <!-- <a href="#" class="btn btn-primary">Check Out</a> -->
+                            <a href=" https://yashgupta7373.github.io/Countdown-Timer/" target="_blank"><button
+                                    class="btn btn-outline-light fw-bold mt-2">Check Out</button></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-5 col-10">
+                <a href="https://yashgupta7373.github.io/Flip-Countdown-Timer/" target="_blank" class="text-decoration-none">
+                    <div class="card mb-3 bg-clr-2 hover-effect">
+                        <img src="img/flip-countdown-timer.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Countdown Timer With Flip Effect</h5>
+                            <p class="card-text font-clr">Countdown Timer Website With amazing Flip Card Effect and Unique UI <i>Using HTML,
+                                    CSS and JavaScript</i> </p>
+                            <!-- <a href="#" class="btn btn-primary">Check Out</a> -->
+                            <a href=" https://yashgupta7373.github.io/Flip-Countdown-Timer/" target="_blank"><button
+                                    class="btn btn-outline-light fw-bold mt-2">Check Out</button></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 d-lg-block d-none">
                 <a href=" https://yashgupta7373.github.io/Portfolio/" target="_blank" class="text-decoration-none">
                     <div class="card mb-3 bg-clr-2 hover-effect">
                         <img src="img/Web capture_22-9-2023_154227_127.0.0.1.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-white">Portfolio</h5>
                             <p class="card-text font-clr">Portfolio Website With Responsive and Unique UI <i>Using HTML,
-                                    CSS and Bootstrap</i> </p>
+                                    CSS and Bootstrap</i><br><br> </p>
                             <!-- <a href="#" class="btn btn-primary">Check Out</a> -->
                             <a href=" https://yashgupta7373.github.io/Portfolio/" target="_blank"><button
                                     class="btn btn-outline-light fw-bold mt-2">Check Out</button></a>
@@ -156,7 +185,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3 col-sm-5 col-10">
+            <!-- <div class="col-lg-3 col-sm-5 col-10">
                 <a href=" https://yashgupta7373.github.io/Netflix-Clone/" target="_blank" class="text-decoration-none">
                     <div class="card mb-3 bg-clr-2 hover-effect">
                         <img src="img/Web capture_22-9-2023_155417_yashgupta7373.github.io.jpeg" class="card-img-top"
@@ -171,6 +200,7 @@
                     </div>
                 </a>
             </div>
+            
             <div class="col-lg-3 d-lg-block d-none">
                 <a href=" https://yashgupta7373.github.io/Divi-Clone/" target="_blank" class="text-decoration-none">
                     <div class="card mb-3 bg-clr-2 hover-effect">
@@ -185,7 +215,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -281,20 +311,19 @@
                 <form>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label font-clr">Name</label>
-                        <input type="text" class="form-control font-clr form-hover-effect bg-clr-2" placeholder="Rohit Sharma" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control font-clr form-hover-effect bg-clr-2 send-data" name="name" placeholder="Your Name" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label font-clr">Email address</label>
-                        <input type="email" class="form-control font-clr form-hover-effect bg-clr-2" placeholder="xyz@gmai.com" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text font-clr">We'll never share your email with anyone else.</div>
+                        <label for="exampleInputEmail1" class="form-label font-clr">Subject</label>
+                        <input type="text" class="form-control font-clr form-hover-effect bg-clr-2 send-data" name="subject" placeholder="Subject..." id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text font-clr">We'll never share your email with anyone else.</div> -->
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label font-clr">Message</label>
-                        <textarea class="form-control font-clr form-hover-effect bg-clr-2" placeholder="Start Writing Your Message..." id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1" class="form-label font-clr ">Message</label>
+                        <textarea class="form-control font-clr form-hover-effect bg-clr-2 send-data" msg="msg" placeholder="Start Writing Your Message..." id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <!-- <button type="submit" class="btn btn-primary">Send</button> -->
-                    <button type="submit" class="btn btn-outline-light form-hover-effect" disabled>Send</button>
-                    <div id="submitHelp" class="form-text font-clr">Currently Form Not working*</div>
+                        <button type="submit" class="btn btn-outline-light form-hover-effect" onclick="send()">Send</button>
+                    <!-- <div id="submitHelp" class="form-text font-clr">Currently Form Not working*</div> -->
                 </form>
             </div>
             <div class="col-md-5 align-self-center">
@@ -304,7 +333,7 @@
                     </a>
                     <h6 class="text-end"><i class="bi bi-telephone text-white"></i> +91 964-560-XXXX</h6>
                     <a href="https://www.google.com/maps/place/Khurja,+Uttar+Pradesh/@28.25112,77.857281,12z/data=!4m6!3m5!1s0x390ca93b6baa34d1:0x1e329858f2851a12!8m2!3d28.2489801!4d77.854903!16zL20vMDNfYjMw?hl=en&entry=ttu" target="_blank" class="text-decoration-none font-clr">
-                        <h6 class="text-end"><i class="bi bi-house text-white"></i> Khurja, Bulandshahr (India)</h6>
+                        <h6 class="text-end"><i class="bi bi-house text-white"></i>Khurja, Bulandshahr (India)</h6>
                     </a>
                     <div class="row">
                         <div class="col-12 text-end text-white">
@@ -327,13 +356,20 @@
 
     <!-- Footer -->
     <hr>
-    <h6 class="text-center text-secondary"> --- YashGupta ---</h6>
+    <h6 class="text-center text-secondary"> --- &copy;Copyright YashGupta ---</h6>
 
     <!-- -------------------------------- JAVASCRIPT -------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script>
+        let name = document.getElementsByClassName('send-data')[0];
+        let subject = document.getElementsByClassName('send-data')[1];
+        let Message = document.getElementsByClassName('send-data')[2];
+        function send(){
+            window.location.href = `mailto:yashgupta73733@gmail.com?subject=${subject.value} (${name.value})&body=${Message.value}`;
+        }
+    </script>
 </body>
 
 </html>
